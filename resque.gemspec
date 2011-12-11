@@ -11,11 +11,11 @@ Gem::Specification.new do |s|
   s.authors           = [ "Chris Wanstrath" ]
 
   s.files             = %w( README.markdown Rakefile LICENSE HISTORY.md )
-  s.files            += Dir.glob("lib/**/*")
-  s.files            += Dir.glob("bin/**/*")
-  s.files            += Dir.glob("man/**/*")
-  s.files            += Dir.glob("test/**/*")
-  s.files            += Dir.glob("tasks/**/*")
+  s.files            += ["lib/resque", "lib/resque/errors.rb", "lib/resque/failure", "lib/resque/failure/airbrake.rb", "lib/resque/failure/base.rb", "lib/resque/failure/hoptoad.rb", "lib/resque/failure/multiple.rb", "lib/resque/failure/redis.rb", "lib/resque/failure/thoughtbot.rb", "lib/resque/failure.rb", "lib/resque/helpers.rb", "lib/resque/job.rb", "lib/resque/plugin.rb", "lib/resque/server", "lib/resque/server/public", "lib/resque/server/public/favicon.ico", "lib/resque/server/public/idle.png", "lib/resque/server/public/jquery-1.3.2.min.js", "lib/resque/server/public/jquery.relatize_date.js", "lib/resque/server/public/poll.png", "lib/resque/server/public/ranger.js", "lib/resque/server/public/reset.css", "lib/resque/server/public/style.css", "lib/resque/server/public/working.png", "lib/resque/server/test_helper.rb", "lib/resque/server/views", "lib/resque/server/views/error.erb", "lib/resque/server/views/failed.erb", "lib/resque/server/views/key_sets.erb", "lib/resque/server/views/key_string.erb", "lib/resque/server/views/layout.erb", "lib/resque/server/views/next_more.erb", "lib/resque/server/views/overview.erb", "lib/resque/server/views/queues.erb", "lib/resque/server/views/stats.erb", "lib/resque/server/views/workers.erb", "lib/resque/server/views/working.erb", "lib/resque/server.rb", "lib/resque/stat.rb", "lib/resque/tasks.rb", "lib/resque/version.rb", "lib/resque/worker.rb", "lib/resque.rb", "lib/tasks", "lib/tasks/redis.rake", "lib/tasks/resque.rake"]
+  s.files            += ["bin/resque", "bin/resque-web"] 
+  # s.files            += []
+  s.files            += ["test/airbrake_test.rb", "test/hoptoad_test.rb", "test/job_hooks_test.rb", "test/job_plugins_test.rb", "test/plugin_test.rb", "test/redis-test-cluster.conf", "test/redis-test.conf", "test/resque-web_test.rb", "test/resque_test.rb", "test/test_helper.rb", "test/worker_test.rb"]
+  # s.files            += []
   s.executables       = [ "resque", "resque-web" ]
 
   s.extra_rdoc_files  = [ "LICENSE", "README.markdown" ]
